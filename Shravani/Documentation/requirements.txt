@@ -1,0 +1,10 @@
+
+```plaintext
+numpy==1.21.0      # Library for numerical operations and array handling
+pandas==1.3.0     # Data manipulation and analysis
+matplotlib==3.4.3  # Visualization library for plotting data
+tensorflow==2.6.0  # Deep learning library used for building and training the model
+scikit-learn==0.24.2  # Machine learning library for model evaluation and preprocessing
+opencv-python==4.5.3.20210927  # Library for image processing
+scikit-image==0.18.3  # Image processing library to perform additional image transformations
+jupyter==1.0.0      # Tool for creating and sharing Jupyter notebooks
