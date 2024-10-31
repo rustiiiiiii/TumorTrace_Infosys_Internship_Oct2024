@@ -63,15 +63,14 @@ The  preprocessing  steps  included:
 
   
 
- - Converting  images  to  grayscale.
-   
-  - Resizing  images  to  a  standard  dimension (e.g., 224x224).
-   
-  - Normalizing  pixel  values  to  a  range  suitable  for  neural 
-   network  input.
-   
-  - Augmenting  the  dataset  using  techniques  such  as  rotation  and 
-   flipping.
+- Histogram of Oriented Gradients (HOG) – This feature descriptor has been used for object detection from MRI images.
+  
+- Sobel Operator - Operator is used to find the edges in an image by specifying regions where there is a significant change in intensity (brightness).
+  
+- Local Binary Pattern – This texture operator has been used on MRI images which labels the pixels of an image by thresholding the neighborhood of each pixel and considers the result as a binary number.
+  
+- MVM-LBP - Mean-Variance-Median Local Binary Pattern – Advanced texture method is used.
+
 
   
 
