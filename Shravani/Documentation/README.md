@@ -55,7 +55,7 @@ jupyter  notebook
 
   
 
-The  dataset  consists  of  MRI  images  labeled  as  malignant  or  benign.  The  data  was  collected  from [source/database], ensuring a diverse representation of cases.
+The  dataset  consists  of  MRI breast  images  labeled  as  malignant  or  benign. 
 
   
 
