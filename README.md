@@ -22,7 +22,7 @@ This project uses the **ResNet50** deep learning model, which is a convolutional
 
 The Jupyter Notebook (`breast_cancer_detection.ipynb`) contains the following steps:
 1. Data Preprocessing
-2. Model Training (ResNet50)
+2. Model Training (ResNet18)
 3. Model Evaluation
 4. Prediction on new images
 
