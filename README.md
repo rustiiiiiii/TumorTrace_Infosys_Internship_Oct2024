@@ -36,8 +36,8 @@ To make it user-friendly, the project uses a Gradio app as the frontend, allowin
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/breast-cancer-detection-resnet18.git
-cd breast-cancer-detection-resnet18
+git clone rustiiiiiii/TumorTrace_Infosys_Internship_Oct2024
+cd shalem
 ```
 
 Install the required dependencies:
