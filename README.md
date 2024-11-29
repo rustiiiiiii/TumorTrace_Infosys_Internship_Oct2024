@@ -22,11 +22,7 @@ To run this project locally, make sure you have the following installed:
 - pip (Python package installer)
 - CUDA (if using GPU for training)
 
-### Installation
 
-1. Clone the repository:
-   git clone https://github.com/your-username/TumorTrace.git
-   cd TumorTrace
 
 TumorTrace/
 │
