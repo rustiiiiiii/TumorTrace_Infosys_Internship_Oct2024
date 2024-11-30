@@ -158,15 +158,15 @@ We evaluated our models using the following metrics:
 ### Model Performance:
 
 -   **VGG16**:
-    -   Accuracy: 78.60%
+    -   Accuracy: 80.40%
     -   AUC: 0.8518
 -   **ResNet18**:
-    -   Accuracy: 77.93%
+    -   Accuracy: 77.945%
     -   AUC: 0.8591
 -   **ResNet50**:
-    -   Accuracy: 76.40%
+    -   Accuracy: 78.85%
     -   AUC: 0.8471
 
 
 ### LICENSE
-This project is licensed under the MIT License - see the LICENSE([LICENSE]) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
