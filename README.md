@@ -13,7 +13,7 @@ The project involves several preprocessing steps to prepare the MRI images for t
 
 
 	4.	Model Training:
-The project uses deep learning models like VGG16, ResNet50, and ResNet18. These models are pre-trained on large datasets (like ImageNet) and then fine-tuned for breast tumor detection using the MRI images. The models are trained using techniques like CrossEntropyLoss for binary classification, and optimizers like Adam and SGD are used to minimize the loss during training.
+The project uses deep learning models like VGG16, ResNet50, and ResNet18. These models are pre-trained on large datasets (like ImageNet) and then fine-tuned for breast tumor detection using the MRI images. The models are trained using techniques like CrossEntropyLoss for binary classification, and optimizer like SGD is used to minimize the loss during training.
 
 
 	5.	Model Evaluation:
