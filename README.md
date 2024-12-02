@@ -7,6 +7,7 @@ The dataset consists of labeled images of tumors categorized into benign and mal
 Pre-processing techniques are applied to enhance image quality and uniformity for training the model.
 
 #Data Collection and Preprocessing
+
 The dataset consists of MRI images labeled as malignant or benign. The data was collected from [source/database], ensuring a diverse representation of cases.
 
 The preprocessing steps included:
