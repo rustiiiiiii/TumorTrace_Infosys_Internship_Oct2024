@@ -1,4 +1,4 @@
-TumorTrace: Breast Cancer Detection Using MRI
+#TumorTrace: Breast Cancer Detection Using MRI
 TumorTrace is an AI-based project aimed at detecting breast cancer using MRI images. By leveraging state-of-the-art deep learning models, the project seeks to provide accurate predictions, assisting radiologists in early and reliable diagnosis.
 Data Collection and Preprocessing
 The dataset consists of breast tumor MRI scans, divided into train, validation, and test sets:
