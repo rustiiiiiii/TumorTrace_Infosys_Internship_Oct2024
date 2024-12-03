@@ -1,28 +1,98 @@
-# TumorTrace
+TumorTrace: MRI-Based AI for Breast Cancer Detection
 
-	1.	Objective:
-The goal is to create a system that can automatically analyze MRI images of the breast to detect tumors and classify them as benign (non-cancerous) or malignant (cancerous). This is done by leveraging deep learning algorithms that can learn from labeled MRI data and improve detection accuracy over time.
+Project Brief
+
+TumorTrace is an AI-powered solution for detecting and classifying breast tumors as benign or malignant using MRI images. The project leverages deep learning models like VGG16, ResNet-50, and ResNet-18 for accurate tumor classification. The goal is to automate tumor detection, aiding in faster and more reliable diagnoses.
+
+Key Features:
+
+	
+
+- Utilizes pre-trained models like VGG16, ResNet-50, and ResNet-18 for feature extraction and fine-tuning.
+- Advanced image processing techniques like Local Binary Patterns (LBP), Gray Level Co-occurrence Matrix (GLCM), and Sobel Edge Detection for better feature extraction.
+- Real-time predictions using a Gradio-based interface for user interaction.
+
+Dependencies
+
+1. Install Dependencies
+
+To install all the required libraries for this project, run the following command:
+
+```bash
+pip install torch torchvision gradio numpy matplotlib tqdm scikit-learn scikit-image opencv-python
+```
+
+2. Libraries Breakdown:
+
+- **torch**: Core library for building deep learning models.
+- **torchvision**: Provides image transformations and pre-trained models.
+- **gradio**: For creating real-time prediction interfaces.
+- **numpy**: For numerical operations and array manipulation.
+- **matplotlib**: For visualizations such as confusion matrices and ROC curves.
+- **tqdm**: Progress bars for loops, like during model training.
+- **scikit-learn**: For classification metrics like accuracy and confusion matrix.
+- **scikit-image**: For image processing tasks like LBP and GLCM.
+- **opencv-python**: For additional image processing, including Sobel edge detection.
+
+2. Data Loading and Preprocessing
+
+ After loading the data, the following preprocessing steps should be applied:
+ 
+   2.1. **Resizing**:
+   - Resize all images to **224x224 pixels** to match the input size required by the models.
+
+   2.2. **Normalization**:
+   - Normalize the pixel values using **ImageNet**’s mean and standard deviation values to ensure consistent inputs for the model.
+
+   2.3. **Data Augmentation**:
+   - **Random Horizontal and Vertical Flips**: Applied with a 50% chance.
+   - **Random Rotation**: Images are rotated within a range of **-20 to 20 degrees**.
+   - **Color Jitter**: Adjusts brightness, contrast, and saturation to mimic real-world variations.
+
+   2.4. **Feature Extraction**:
+   - **Sobel Edge Detection**: Highlights edges in the images for better feature representation.
+   - **Local Binary Patterns (LBP)**: Extracts texture features for improved classification.
+   - **Gray Level Co-occurrence Matrix (GLCM)**: Analyzes spatial relationships between pixels to extract texture-based features.
+3. Run the Training
+
+Training the model involves setting up the training loop, defining the loss function, and specifying the SGD optimizer.
+
+```python
+for epoch in range(50):
+    train(epoch, model, 50, train_loader, criterion, 0.01, 0.01)
+```
+4. Test the Model
+
+After training the model, it’s important to evaluate it on a test or validation set to assess its performance. 
+```python
+test(model, test_loader)
+```
+
+5.Outputs
+
+#### Model Accuracy:
+The evaluation results for the models on the test set are:
+
+- **VGG16**: 75.52%
+- **ResNet-50**: 73.07%
+- **ResNet-18**: 72.62%
+
+#### Classification Metrics:
+- **Accuracy**: The percentage of correct predictions.
+- **Sensitivity (Recall)**: The model’s ability to detect malignant cases.
+- **Specificity**: The model’s ability to detect benign cases.
+- **AUC (Area Under the Curve)**: Represents how well the model distinguishes between benign and malignant cases.
+- **Precision**: The proportion of true positives among all positive predictions.
+- **F1-Score**: The harmonic mean of precision and recall.
+
+#### Visualizations:
+- **Confusion Matrix**: Shows the number of correct and incorrect predictions for each class (Benign and Malignant).
+- **ROC Curve**: Plots the trade-off between sensitivity and specificity across different thresholds.
+
+6. Real-Time Predictions with Gradio
+
+   To make real-time predictions after training the model, used Gradio to create a simple interface where users can upload images and select a model for classification.
 
 
-	2.	Data Collection:
-The dataset used for the project consists of MRI images of breast tumors, which are labeled into two classes: benign and malignant. The data is divided into training, validation, and test sets to ensure that the models are properly trained and evaluated.
 
 
-	3.	Preprocessing:
-The project involves several preprocessing steps to prepare the MRI images for training the models. These include resizing images, normalizing pixel values, data augmentation (such as flipping and rotating images), and feature extraction (e.g., using Histogram of Oriented Gradients (HOG) and Local Binary Patterns (LBP)).
-
-
-	4.	Model Training:
-The project uses deep learning models like VGG16, ResNet50, and ResNet18. These models are pre-trained on large datasets (like ImageNet) and then fine-tuned for breast tumor detection using the MRI images. The models are trained using techniques like CrossEntropyLoss for binary classification, and optimizer like SGD is used to minimize the loss during training.
-
-
-	5.	Model Evaluation:
-After training, the models are evaluated on a separate test dataset
-
-
-	6.	Results:
-The results show that the VGG16 model achieves the highest accuracy at 75.52%, followed by ResNet50 at 73.07%, and ResNet18 at 72.62%. These models show promising results in accurately classifying breast tumors from MRI scans.
-
-
-	7.	Real-Time Application:
-The project also includes the development of an interactive web-based application using Gradio. In this application, users can upload MRI images and select a model (VGG16, ResNet50, or ResNet18). The model then classifies the tumor as benign or malignant and displays the probabilities for each class.
