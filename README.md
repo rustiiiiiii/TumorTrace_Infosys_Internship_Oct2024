@@ -20,9 +20,32 @@ This project is an MRI-based breast tumor classification application that predic
 
 ### Prerequisites
 - Python 3.8 or later
-- Required libraries: TensorFlow, PyTorch, Gradio, scikit-learn , numpy , pandas , matplot,
+- Required libraries: TensorFlow, PyTorch, Gradio, scikit-learn , numpy , pandas , matplot, jupyter notebook
 
-
+### Steps
+1. Create a python enviornmet:
+  ```bash
+    python -m venv venv
+  ```
+2. Activate python enviornment
+  ```bash
+      .venv\Scripts\activate
+  ```
+   
+3 . Install dependencies mentioned above using pip install liberary name
+  ```bash
+      pip install <liberary-name>
+  ```
+3. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/mri-breast-tumor-classifier.git
+   cd mri-breast-tumor-classifier
+   ```
+4 Run jupyter notebook:
+  ```bash
+    jupyter notebook
+  ```
+5 In jupyter notebook open notebook file in Code folder and run
 
 ## Models and Training
 - **ResNet18:** A lightweight model achieving an accuracy of 68%.
