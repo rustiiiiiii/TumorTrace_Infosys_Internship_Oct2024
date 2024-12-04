@@ -1,6 +1,4 @@
-Sure! Below is a template for a README file that you can use for your GitHub repository related to the breast cancer detection project using ResNet18 and Gradio.
 
----
 
 # Breast Cancer Detection using ResNet18
 
