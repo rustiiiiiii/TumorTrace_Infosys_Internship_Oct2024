@@ -22,7 +22,6 @@ pip install -r requirements.txt
 ```
 
 ## 🚀 Usage
-## 🚀 Usage
 1. Clone the repository
     ```shell
     git clone https://github.com/yourusername/TumorTrace.git
