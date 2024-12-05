@@ -42,7 +42,7 @@ The dataset comprises MRI images that are labeled as either malignant or benign.
 
 The preprocessing steps included:
 - Converting images to grayscale.
-- Resizing images to a standard dimension (e.g., 224x224).
+- Resizing images to a standard dimension (ie. 224x224).
 - Normalizing pixel values to a range suitable for neural network input.
 - Augmenting the dataset using techniques such as rotation and flipping.
 - Applying class weights to address imbalanced data.
@@ -63,7 +63,6 @@ We trained our models using the following setup:
 - momentum = 0.9
 - no_cuda = False
 - log_interval = 10
-- model_name = "vgg16"
 - optimizer = optim.AdamW(model.parameters(), lr=0.00005, weight_decay=1e-4)
 - scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=5, verbose=True)
 
