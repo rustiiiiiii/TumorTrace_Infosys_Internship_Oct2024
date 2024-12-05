@@ -14,7 +14,7 @@ The **Tumor Trace** project is focused on creating an AI model that detects brea
 - [Future Work](#future-work)
 - [License](#license)
 
-⚙️ ## Installation
+## ⚙️ Installation
 To get this project up and running, one has to install the required libraries. It can be done by running the following command
 
 ```shell
