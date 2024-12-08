@@ -24,8 +24,8 @@ pip install -r requirements.txt
 ## 🚀 Usage
 1. Clone the repository
     ```shell
-    git clone https://github.com/yourusername/TumorTrace.git
-    cd TumorTrace
+    git clone https://github.com/rustiiiiiii/TumorTrace_Infosys_Internship_Oct2024.git
+    cd cd TumorTrace_Infosys_Internship_Oct2024
     ```
 
 2. Place your MRI dataset in the specified directory.
