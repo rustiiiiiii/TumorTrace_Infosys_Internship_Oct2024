@@ -78,14 +78,14 @@ We evaluated our models using the following metrics:
 ## 📈 Results and Impact
 ### Model Performance:
 - **VGG16**:
-    - Accuracy: 80.40%
-    - AUC: 0.8714
+    - Accuracy: 81.70%
+    - AUC: 0.8772
 - **ResNet18**:
-    - Accuracy: 77.945%
-    - AUC: 0.8355
+    - Accuracy: 80.91%
+    - AUC: 0.8859
 - **ResNet50**:
-    - Accuracy: 78.85%
-    - AUC: 0.8690
+    - Accuracy: 80.43%
+    - AUC: .8742
 
 ## 🔮 Future Work
 - **Data Augmentation and Enrichment**: Incorporating more diverse and larger datasets.
