@@ -1,5 +1,5 @@
 Data Collection
-The dataset for this project was collected from [insert source, e.g., a public database like Kaggle, medical imaging database, etc.]. The dataset contains MRI images labeled as either malignant or benign, providing a robust foundation for training and evaluating our model.
+The dataset for this project was collected from Computers in Biology Journal. It contains MRI images labeled as either malignant or benign, providing a robust foundation for training and evaluating our model.
 
 Data Cleaning
 Before analysis, the data underwent several cleaning steps:
